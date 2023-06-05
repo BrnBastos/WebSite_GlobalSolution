@@ -1,3 +1,4 @@
+/* Menu de navegação */
 body {
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ a {
     font-weight: bold;
     font-size: 16px;
 }
-
+/* Carrosel de fotos para o inicio  */
 * {box-sizing: border-box}
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
@@ -63,7 +64,7 @@ img {vertical-align: middle;}
   background-color: #f1f1f1;
   color: black;
 }
-
+/* Sessão sobre a fome */
 #texto_fome{
 	width:55%;
 	text-align: center;
