@@ -38,7 +38,6 @@ function updateDateTime() {
     // Atualiza a data e hora a cada segundo
     setInterval(updateDateTime, 1000);
 
-}
 
 function logout() {
 localStorage.removeItem('logado');
