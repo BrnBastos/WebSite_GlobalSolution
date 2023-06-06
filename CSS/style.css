@@ -6,6 +6,11 @@ body {
 	color: #000;
   }
 
+  .datetime {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
   body.dark-mode {
 	background-color: #222;
 	color: #fff;

@@ -23,3 +23,16 @@ function toggleDarkMode() {
     var body = document.body;
     body.classList.toggle('dark-mode');
   }
+  
+  // Atualiza a data e hora atual
+function updateDateTime() {
+    var datetimeElement = document.querySelector('.datetime');
+    var now = new Date();
+    datetimeElement.textContent = 'Data e Hora atual: ' + now.toLocaleString();
+  }
+
+    // Atualiza a data e hora inicial
+    updateDateTime();
+
+    // Atualiza a data e hora a cada segundo
+    setInterval(updateDateTime, 1000);
