@@ -18,3 +18,8 @@ function showSlides(n, no) {
     }
     x[slideIndex[no] - 1].style.display = "block";
 }
+
+function toggleDarkMode() {
+    var body = document.body;
+    body.classList.toggle('dark-mode');
+  }
