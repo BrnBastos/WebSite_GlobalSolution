@@ -22,6 +22,7 @@ function showSlides(n, no) {
 function toggleDarkMode() {
     var body = document.body;
     body.classList.toggle('dark-mode');
+
   }
   
   // Atualiza a data e hora atual
@@ -36,3 +37,17 @@ function updateDateTime() {
 
     // Atualiza a data e hora a cada segundo
     setInterval(updateDateTime, 1000);
+
+}
+
+function logout() {
+localStorage.removeItem('logado');
+window.location.href = 'login.html';
+}
+
+// Verifica se o usuário está logado
+var logado = localStorage.getItem('logado');
+if (!logado) {
+window.location.href = 'login.html';
+}
+
