@@ -22,4 +22,15 @@ function showSlides(n, no) {
 function toggleDarkMode() {
     var body = document.body;
     body.classList.toggle('dark-mode');
-  }
+}
+
+function logout() {
+localStorage.removeItem('logado');
+window.location.href = 'login.html';
+}
+
+// Verifica se o usuário está logado
+var logado = localStorage.getItem('logado');
+if (!logado) {
+window.location.href = 'login.html';
+}
