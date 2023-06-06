@@ -13,10 +13,9 @@
     <header>
         <nav>
            <div class="logo">Hidroponia</div>
-           <button id="dark_button" onclick="toggleDarkMode()">Ativar Dark Mode</button>
+           <button class="buttons" onclick="toggleDarkMode()">Dark Mode</button>
+           <button class="buttons" onclick="logout()">Logout</button>
             <ul class="navegaçao">
-
-              
                 
                 <a href="#">Inicio</a>
                 <a href="#">Fome</a>
@@ -124,6 +123,28 @@
         <br><br><br>
         <Center><h1 style="color:#32D285;">Contate-nos</h1></Center>
         <br><br>
+
+        <center> <form id="formulario"> 
+          <br>
+              <center> Dúvidas ou conselhos? deixe sua mensagem aqui </center>
+              <br/><br/>
+                <div id="nome"><label for="name"> Nome: </label> 
+                <input type="text" placeholder="Escreva seu nome" required="required" id="name"/></div>
+                <br> 	
+                <div id="mail"><label for="mail"> E-mail: </label>
+                <input type="email"  placeholder="email@email.com" required="required" id="email"/></div>
+                <br>
+                <div id="Telefone"><label for="mail"> Telefone: </label>
+                <input type="tel"  placeholder="(99) 98888-8888" required="required" id="telefone"/></div>
+                <br>
+                <div id="mnsgm"><label for="msg"> Mensagem: </label> <br> <br> 
+                <input type="text" placeholder="Deixe a sua mensagem" required="required" id="msg"/></div>
+                <br> <br>  
+                <button type="submit" id="botao-enviar"> <b style="color:black;"> Enviar </b> </button> 
+              <br> <br> <br>
+              <center> O seu feedback nos ajuda a melhorar e trazer a melhor <br> experiência para você  </center><br>
+            </form>	</center>
+
         <div id="contatoMembros">
         <h4> Bruno Silva Bastos  -- brunosbastos5@gmail.com</h4>
         <h4> Gabriel Freitas -- gabrielmaradei2017@gmail.com</h4>
@@ -131,6 +152,7 @@
         <h4> Matheus Lucas -- matheus.lob1379@gmail.com</h4>
         <br><br><Center><h3 style="color:#32D285;">Projeto da <span>HEINZ </span> em conjunto com os alunos e professores da FIAP </h3></Center><br><br>
       </div>
+
            <footer>
        
            </footer>

@@ -2,8 +2,24 @@
 body {
     margin: 0;
     padding: 0;
-    
-}
+	background-color: #fff;
+	color: #000;
+  }
+
+  body.dark-mode {
+	background-color: #222;
+	color: #fff;
+  }
+
+  .dark-mode button {
+	background-color: #555;
+	color: #fff;
+  }
+
+  .buttons{
+	margin-left: 90%;
+  }
+
 .navegaçao {
     display: flex;
     justify-content: space-between;
@@ -175,3 +191,57 @@ span{
 	color: red;
 	
 }
+
+#formulario{
+	margin-bottom:5%;
+	width:50vw;
+	height:35%;
+	margin-top:1%;
+	padding:1.302vw;
+	color:#FFFFFF;
+	background-color:rgb(0, 70, 41);
+	font-size:1.6vw;
+  }
+  #botao-enviar{
+	background-color:#FFFFFF;
+	border-radius:7px;
+	width:5vw;
+	height:3vw;
+	border:0;
+	font-size:1vw;
+	font-family:Arial;
+  }
+  #botao-enviar:hover{
+	background-color:#b5b5b5;
+  }
+  #name{
+	width:28.5vw;
+	height:2.0vw;
+	font-size:0.90vw;
+  }
+  .nome{
+	margin-right:2,75vw;
+  }
+  #email{
+	width:28.5vw;
+	height:2.0vw;
+	font-size:0.90vw;
+  }
+  .mail{
+	margin-right:2,75vw;
+  }
+  #telefone{
+	width:28.5vw;
+	height:2.0vw;
+	margin-right:1.95vw;
+	font-size:0.90vw;
+  }
+  .Telefone{
+	margin-right:2,75vw;
+  }
+  #msg{
+	width:28.5vw;
+	height:10.36vw;
+	font-size:1.0vw;
+	margin-left:5.45vw;
+	}
