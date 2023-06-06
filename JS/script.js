@@ -23,3 +23,27 @@ function toggleDarkMode() {
     var body = document.body;
     body.classList.toggle('dark-mode');
   }
+
+function logout() {
+localStorage.removeItem('logado');
+window.location.href = 'login.html';
+}
+
+// Verifica se o usuário está logado
+var logado = localStorage.getItem('logado');
+if (!logado) {
+window.location.href = 'login.html';
+}
+
+// Atualiza a data e hora atual
+function updateDateTime() {
+    var datetimeElement = document.querySelector('.datetime');
+    var now = new Date();
+    datetimeElement.textContent = 'Data e Hora atual: ' + now.toLocaleString();
+  }
+
+    // Atualiza a data e hora inicial
+    updateDateTime();
+
+    // Atualiza a data e hora a cada segundo
+    setInterval(updateDateTime, 1000);
