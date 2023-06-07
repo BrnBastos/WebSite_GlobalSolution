@@ -50,3 +50,5 @@ if (!logado) {
 window.location.href = 'login.html';
 }
 
+var scrollTop = function() {
+    window.scrollTo(0, 0);}

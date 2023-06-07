@@ -1,10 +1,17 @@
 /* Menu de navegação */
+html{
+	scroll-behavior:smooth;
+ }
+/* importação da font*/
+ @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
+
 body {
     margin: 0;
     padding: 0;
 	background-color: #fff;
 	color: #000;
-  }
+	font-family: 'Inria Sans', sans-serif;
+}
 
   .datetime {
     font-size: 24px;
@@ -28,11 +35,16 @@ body {
 
   .buttons{
 	margin-left: 90%;
+	display: inline-flex;
   }
 
 .navegaçao {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.sections{
+	padding:0 100px;
 }
 
 .logo {
@@ -44,7 +56,7 @@ body {
 
  
 nav {
-    background-color: #32D285;
+    background-color: rgb(0, 70, 41);
     text-align: center;
     padding: 20px 0;
 }
@@ -73,7 +85,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #0C3060;
+  color: rgb(0, 70, 41);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -189,13 +201,23 @@ img {vertical-align: middle;}
 	margin-right: 45%;
 	margin-top: 10vh;
 }
-  
+
+#fotoHIDRO1{
+	height: 60vh;
+	width: 20vw;
+	padding-top: 240px;
+}
+
+#fotoHIDRO3{
+	height: 40vh;
+	width: 20vw;
+	padding-top: 140px;
+}
 
 
 /* Sessão sobre contatos */
 #contatoMembros{
 	margin-left: 6vw;
-	color:#555555;
 }
 span{
 	color: red;
@@ -254,4 +276,33 @@ span{
 	height:10.36vw;
 	font-size:1.0vw;
 	margin-left:5.45vw;
+	}
+
+	#subirTopo {
+		text-decoration: none;
+		background: #375252;
+		bottom: 1.563vw;
+		right: 1.563vw;
+		color: #ffffff;
+		text-align: center;
+		cursor: pointer;
+		padding: 0.781vw;
+		font-size: 0.781vw;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: fixed;
+		border: 0;
+		font-family: 'Inria Sans', sans-serif;
+		opacity: .8;
+	}
+	#subirTopo:hover {
+		opacity:1;
+	}
+
+	footer{
+		background-color: rgb(0, 70, 41);
+		min-height:14vh;
+		align-items: center;
+		text-align: center;
+		padding:10px;
 	}
